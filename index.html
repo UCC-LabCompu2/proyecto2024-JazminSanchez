@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Adivinanza</title>
@@ -10,17 +10,42 @@
 </head>
 <body>
 
-<header> 
+<header>
     <img src="imagenes/logoadivinanzas.png">
     <h1>Ad¿v¿nanza?</h1>
 </header>
 <nav> puntos </nav>
 <section>
     <div>
-        ¿Cuantas Adivinanzas podras lograr?
+        <h1>¿Cuantas Adivinanzas podras lograr?</h1>
     </div>
 </section>
+<section>
+<div>
+    <p>
+        Seleccione un idioma:<br>
+        <label for="idioma-es">
+        <input type="radio" id="idioma-es" name="idioma" value="español">Español
+        </label>
+        <label for="idioma-in">
+        <input type="radio" id="idioma-in" name="idioma" value="Ingles">Ingles
+        </label>
+    </p>
 
+    <p>
+        <label for="nivel">Seleccione un Nivel:</label>
+        <select id="nivel" name="nivel">
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+        </select>
+    </p>
+
+    <p>
+        <button type="button">¡Comenzar!</button>
+    </p>
+</div>
+</section>
 
 </body>
 </html>
