@@ -1,3 +1,28 @@
 h1{
     color: #4CAF50;
 }
+nav{
+    backdrop-filter: #8bffd0;
+    color: #000000;
+    padding: 10px 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: end;
+}
+li{
+    display: inline-block;
+    margin-right: 20px;
+}
+li:last-child{
+    margin-right: 0;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
