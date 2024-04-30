@@ -1,28 +1,30 @@
+div{
+    border: 2px solid #43e40a;
+    padding: 15px;
+    margin:10px 40px 5px ;
+    background-color: rgba(106, 216, 6, 0.2);
+    border-radius:15px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+}
+#s2{
+    float: left;
+}
+#s1{
+    float: right;
+}
+#b{
+    float: right;
+}
+.ad{
+    font-family: Arial, sans-serif;
+    background: rgb(216, 250, 205);
+}
 h1{
     color: #4CAF50;
+    float: right;
+
 }
 nav{
-    backdrop-filter: #8bffd0;
-    color: #000000;
-    padding: 10px 0;
-}
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: end;
-}
-li{
-    display: inline-block;
-    margin-right: 20px;
-}
-li:last-child{
-    margin-right: 0;
-}
-a{
-    color: #000000;
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: underline;
+    padding: 20px;
+    background-color: rgb(67, 228, 10);
 }
