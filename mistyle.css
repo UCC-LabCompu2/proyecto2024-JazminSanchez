@@ -1,30 +1,50 @@
-div{
+#s2{
+    float: left;
     border: 2px solid #43e40a;
-    padding: 15px;
-    margin:10px 40px 5px ;
+    padding: 70px;
+    margin:10px 10px 5px ;
     background-color: rgba(106, 216, 6, 0.2);
     border-radius:15px;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
-}
-#s2{
-    float: left;
+    font-size: 30px;
 }
 #s1{
     float: right;
+    border: 2px solid #43e40a;
+    padding: 20px;
+    margin:10px 10px 5px ;
+    background-color: rgba(106, 216, 6, 0.2);
+    border-radius:15px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
 }
-#b{
+.b{
     float: right;
+    border: 2px solid #43e40a;
+    padding: 15px;
+    margin:20px 40px 5px ; <!--margin: [top] [right] [bottom] [left]-->
+    background-color: rgba(106, 216, 6, 0.2);
+    border-radius:15px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 40px;
 }
 .ad{
     font-family: Arial, sans-serif;
     background: rgb(216, 250, 205);
 }
-h1{
+.menu{
     color: #4CAF50;
-    float: right;
-
+    font-family: "Lora", serif;
+    font-size: 40px;
+    text-align: left;
+    margin:5px 5px 8px;
 }
 nav{
     padding: 20px;
     background-color: rgb(67, 228, 10);
+    margin:0px 0px 8px;
+}
+#logo{
+    width: 150px;
+    float: left;
 }
