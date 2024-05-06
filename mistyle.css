@@ -1,50 +1,66 @@
-#s2{
-    float: left;
-    border: 2px solid #43e40a;
-    padding: 70px;
-    margin:10px 10px 5px ;
-    background-color: rgba(106, 216, 6, 0.2);
-    border-radius:15px;
-    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 30px;
-}
-#s1{
-    float: right;
-    border: 2px solid #43e40a;
-    padding: 20px;
-    margin:10px 10px 5px ;
-    background-color: rgba(106, 216, 6, 0.2);
-    border-radius:15px;
-    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 20px;
-}
-.b{
-    float: right;
-    border: 2px solid #43e40a;
-    padding: 15px;
-    margin:20px 40px 5px ; <!--margin: [top] [right] [bottom] [left]-->
-    background-color: rgba(106, 216, 6, 0.2);
-    border-radius:15px;
-    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 40px;
-}
-.ad{
+body{
     font-family: Arial, sans-serif;
-    background: rgb(216, 250, 205);
+    background: linear-gradient(to bottom, rgba(124, 237, 18, 0.67), rgba(185, 241, 166, 0.82));
 }
-.menu{
-    color: #4CAF50;
+header{
+    color: #2e5042;
+    background: rgba(124, 237, 18, 0.29);
+    padding: 3px;
     font-family: "Lora", serif;
     font-size: 40px;
-    text-align: left;
-    margin:5px 5px 8px;
+    margin:0px 0px 8px 0px;
+    display: flex;
+    align-items:center ;
 }
 nav{
-    padding: 20px;
-    background-color: rgb(67, 228, 10);
-    margin:0px 0px 8px;
+    padding: 1px;
+    background-color: rgba(74, 131, 108, 0.31);
+    margin: 0px 0px 8px 0px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    margin-right: 30px;
+}
+#home{
+    width: 40px;
 }
 #logo{
     width: 150px;
+}
+#s2{
+    text-align: center;
     float: left;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    padding: 70px;
+    margin:10px 10px 5px ;
+    background-color: rgba(116, 243, 2, 0.2);
+    border-radius:15px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+}
+#s1, div{
+    float: right;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    padding: 20px;
+    margin:28px 15px 5px ;
+    background-color: rgba(116, 243, 2, 0.2);
+    border-radius:15px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+}
+.b{
+    float: right;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin:50px 50px 50px ; /* margin: [top] [right] [bottom] [left] */
+    background-color: rgb(159, 234, 8);
+    border-radius:15px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 40px;
 }
