@@ -9,7 +9,6 @@ header{
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
-    margin:0px 0px 8px 0px;
     display: flex;
     align-items:center ;
 }
@@ -21,9 +20,8 @@ header{
     letter-spacing: 7px;
 }
 nav{
-    padding: 0px;
     background-color: rgba(74, 131, 108, 0.31);
-    margin: 0px 0px 8px 0px ;
+    margin: 0 0 8px 0 ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,7 +104,7 @@ li{
     float: right;
     border: 2px solid rgb(0, 0, 0);
     padding: 20px;
-    margin:50px 50px 50px ; /* margin: [top] [right] [bottom] [left] */
+    margin:50px; /* margin: [top] [right] [bottom] [left] */
     background-color: rgba(5, 152, 243, 0.84);
     border-radius:15px;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
@@ -116,7 +114,7 @@ li{
     float: right;
     border: 2px solid rgb(0, 0, 0);
     padding: 20px;
-    margin:50px 50px 50px ; /* margin: [top] [right] [bottom] [left] */
+    margin:50px; /* margin: [top] [right] [bottom] [left] */
     background-color: rgba(5, 152, 243, 0.84);
     border-radius:15px;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
@@ -126,7 +124,7 @@ li{
     float: left;
     border: 2px solid rgb(0, 0, 0);
     padding: 20px;
-    margin:50px 80px 50px ; /* margin: [top] [right] [bottom] [left] */
+    margin:50px 80px 50px ;
     background-color: rgba(235, 243, 5, 0.84);
     border-radius:15px;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
@@ -136,10 +134,9 @@ li{
     float: left;
     border: 2px solid rgb(0, 0, 0);
     padding: 20px;
-    margin: 50px 50px 50px; /* margin: [top] [right] [bottom] [left] */
+    margin: 50px;
     background-color: rgba(243, 49, 5, 0.84);
     border-radius: 15px;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 20px;
 }
-/*9FEA08FF
