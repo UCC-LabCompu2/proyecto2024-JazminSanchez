@@ -73,6 +73,15 @@ li{
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 15px;
 }
+#s3{
+    float: right;
+    padding: 20px;
+    margin:28px 15px 5px ;
+    background-color: rgba(235, 243, 5, 0.55);
+    border-radius:15px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+}
 .div_nivel{
     float: right;
     border: 1px solid rgba(0, 0, 0, 0.37);
@@ -102,5 +111,35 @@ li{
     border-radius:15px;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 40px;
+}
+.siguiente{
+    float: right;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin:50px 50px 50px ; /* margin: [top] [right] [bottom] [left] */
+    background-color: rgba(5, 152, 243, 0.84);
+    border-radius:15px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 33px;
+}
+.pista{
+    float: left;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin:50px 80px 50px ; /* margin: [top] [right] [bottom] [left] */
+    background-color: rgba(235, 243, 5, 0.84);
+    border-radius:15px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+.saltar {
+    float: left;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin: 50px 50px 50px; /* margin: [top] [right] [bottom] [left] */
+    background-color: rgba(243, 49, 5, 0.84);
+    border-radius: 15px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
 }
 /*9FEA08FF
