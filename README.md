@@ -1,10 +1,10 @@
 # Adivinanzas
-Esta pagina sirve para entrenar tu mente resolviendo adivinanzas.
+Esta página sirve para entrenar tu mente resolviendo adivinanzas.
 
 ## Autor:
 -> Jazmin Sanchez
 
-## Tecnologias Utilizadas:
+## Tecnologías Utilizadas:
 -> HTML5
 -> CSS3
 
