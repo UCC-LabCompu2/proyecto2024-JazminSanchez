@@ -1,5 +1,5 @@
 # Adivinanzas
-Esta página sirve para entrenar tu mente resolviendo adivinanzas.
+Esta página sirve para **entrenar tu mente** resolviendo **adivinanzas** en distintos niveles e idiomas.
 
 ## Autor:
 *Jazmin Sanchez
