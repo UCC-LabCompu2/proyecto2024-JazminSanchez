@@ -140,3 +140,7 @@ li{
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 20px;
 }
+a, a:hover{
+    text-decoration: none;
+    color: black;
+}
