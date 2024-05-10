@@ -2,7 +2,7 @@
 Esta página sirve para **entrenar tu mente** resolviendo **adivinanzas** en distintos niveles e idiomas.
 
 ## Autor:
-*Jazmin Sanchez
+* Jazmin Sanchez
 
 ## Tecnologías Utilizadas:
 * HTML5
