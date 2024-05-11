@@ -23,9 +23,7 @@ Ofrece una experiencia entretenida y educativa, apta para todas las edades. La i
 
 ### Modo de uso:
 - **_Elegir nivel de dificultad:_** 
-* **(1)** --> Fácil
-* **(2)**--> Moderado
-* **(3)**--> Difícil
+- **(1)** --> Fácil // **(2)**--> Moderado // **(3)**--> Difícil
 - **_Elegir idioma:_** respecto a sus conocimientos previos.
 - Posicionar el cursor sobre el botón **"Comenzar"** y hacer clic.
 - Leer el enunciado y colocar la respuesta en el espacio predispuesto. (En caso de no hallar la respuesta, recurrir a la opción **"Pista"** para conseguir una ayuda. Si no logras descifrarla, presiona el botón **"Saltar"**. **Recuerda** que **NO** sumarás los 10 puntos correspondientes.)
