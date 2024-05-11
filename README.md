@@ -1,6 +1,6 @@
 # Adivinanzas
 ## Autor:
-* Jazmin Sanchez
+  Jazmín Sanchez
 ## Utilidades:
 "Adivinanzas" es una página web desarrollada y diseñada con el propósito de **estimular y entrenar tu mente** resolviendo **adivinanzas** a partir de tres niveles y dos idiomas. 
 Ofrece una experiencia entretenida y educativa, apta para todas las edades. La inspiración para este proyecto surgió de observar a mis hermanos repetir las mismas adivinanzas constantemente, y notar cómo les genera una sonrisa a ellos y a quienes los rodean.
