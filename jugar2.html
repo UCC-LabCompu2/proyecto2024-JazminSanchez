@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jugar</title>
+    <meta content="Jazmin Sanchez" name="autor">
+    <meta content="Web para jugar con adivinanzas" name="descripcion">
+    <meta content="adivinanzas" name="palabras clave">
+    <link rel="stylesheet" href="mistyle.css" type="text/css">
+    <link rel="shortcut icon" href="imagenes/logoadivinanzas.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="misfunciones.js"></script>
+</head>
+<body>
+
+<header>
+    <img src="imagenes/logoadivinanzas.png" id="logo" alt="logo">
+    <h1 class="t" >ADIVINANZA?</h1>
+</header>
+<nav>
+    <ul>
+        <li>
+            <div class="div_home">
+                <a href="index.html"> <img src="imagenes/home.png" id="home" alt="home"> </a>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <div class="div_puntos">
+                <b> <a href="puntos.html" > Mis Puntos </a> </b>
+            </div>
+        </li>
+    </ul>
+</nav>
+<section id="s2">
+    <h2> "¿Que hace una abeja en el gimnasio?" </h2>
+</section>
+<section id="s3">
+    <p>
+        <label for="respuesta"> <b> Ingrese su respuesta: </b><br></label>
+        <textarea name="respuesta" id="respuesta" rows="3" cols="50" ></textarea>
+    </p>
+    <p id="resultado"></p>
+</section>
+<p><button type="button" class="verificar" onclick="verificarRespuesta()"> <b> Verificar </b> </button></p>
+<p><button type="button" class="siguiente" onclick="seguir()"> <b> siguiente </b> </button></p>
+<section id="s4">
+    <p><button type="button" class="saltar" onclick="saltarAdivinanza()"> <b> Saltar </b> </button></p>
+    <p><button type="button" class="pista" onclick="ayuda()"> <b> Pista </b> </button></p>
+</section>
+</body>
+</html>
