@@ -23,5 +23,13 @@ function saltarAdivinanza() {
     }
 }
 function ayuda() {
-    alert("Es una palabra, muy famosa en Hawai");
+    alert("Es 1 palabra, muy conocida en Hawai");
+}
+function seguir() {
+        var respuesta = document.getElementById("respuesta").value.toLowerCase(); // Obtener la respuesta ingresada por el usuario
+        if (respuesta === "alohas") { // Verificar si la respuesta es correcta
+            window.location.href="index.html";
+        } else {
+            alert("Debes completar primero esta adivinanza antes de avanzar.");
+        }
 }
