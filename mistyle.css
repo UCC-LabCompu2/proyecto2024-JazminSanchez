@@ -1,10 +1,10 @@
 body{
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, rgba(124, 237, 18, 0.67), rgba(185, 241, 166, 0.82));
+    background: rgba(185, 241, 166, 0.82);
 }
 header{
     font-family: "Lora", serif;
-    background: rgba(124, 237, 18, 0.29);
+    background: rgba(164, 248, 85, 0.98);
     padding: 3px;
     font-weight: 400;
     font-style: normal;
@@ -20,7 +20,7 @@ header{
     letter-spacing: 7px;
 }
 nav{
-    background-color: rgba(74, 131, 108, 0.31);
+    background-color: rgb(52, 213, 148);
     margin: 0 0 8px 0 ;
     display: flex;
     justify-content: space-between;
@@ -71,12 +71,12 @@ li{
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 15px;
 }
-#s3{
+#s3 {
     float: right;
     padding: 20px;
-    margin:28px 15px 5px ;
+    margin: 100px 10px 18px;
     background-color: rgba(235, 243, 5, 0.55);
-    border-radius:15px;
+    border-radius: 15px;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 15px;
 }
@@ -114,17 +114,27 @@ li{
     float: right;
     border: 2px solid rgb(0, 0, 0);
     padding: 20px;
-    margin:50px; /* margin: [top] [right] [bottom] [left] */
+    margin: 10px; /* margin: [top] [right] [bottom] [left] */
     background-color: rgba(5, 152, 243, 0.84);
     border-radius:15px;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 33px;
+    font-size: 27px;
+}
+.verificar{
+    float: right;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin:10px;
+    background-color: rgba(9, 198, 41, 0.84);
+    border-radius:15px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 27px;
 }
 .pista{
     float: left;
     border: 2px solid rgb(0, 0, 0);
     padding: 20px;
-    margin:50px 80px 50px ;
+    margin:10px 10px 10px ;
     background-color: rgba(235, 243, 5, 0.84);
     border-radius:15px;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
@@ -134,7 +144,7 @@ li{
     float: left;
     border: 2px solid rgb(0, 0, 0);
     padding: 20px;
-    margin: 50px;
+    margin: 10px;
     background-color: rgba(243, 49, 5, 0.84);
     border-radius: 15px;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
