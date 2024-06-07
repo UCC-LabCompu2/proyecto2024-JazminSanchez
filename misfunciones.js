@@ -1,13 +1,13 @@
 function verificarRespuesta() {
     // La respuesta correcta
-    const respuestaCorrecta = "alohas";
+    const respuestaCorrecta =["alohas", "zumba"];
     // Obtener el valor ingresado por el usuario
     const respuestaUsuario = document.getElementById("respuesta").value.trim().toLowerCase();
     // Elemento donde se mostrará el resultado
     const resultado = document.getElementById("resultado");
 
     // Verificar si la respuesta es correcta
-    if (respuestaUsuario === respuestaCorrecta) {
+    if (respuestaCorrecta.includes(respuestaUsuario)) {
         resultado.textContent = "¡Correcto! ¡Bien hecho!";
         resultado.style.color = "green";
     } else {
@@ -26,9 +26,15 @@ function ayuda() {
     alert("Es 1 palabra, muy conocida en Hawai");
 }
 function seguir() {
-        var respuesta = document.getElementById("respuesta").value.toLowerCase(); // Obtener la respuesta ingresada por el usuario
-        if (respuesta === "alohas") { // Verificar si la respuesta es correcta
-            window.location.href="index.html";
+    const respuestascorrectas = ["alohas", "zumba"];
+    const respuesta = document.getElementById("respuesta").value.trim().toLowerCase(); // Obtener la respuesta ingresada por el usuario
+        if (respuestascorrectas.includes(respuesta)) { // Verificar si la respuesta es correcta
+            const paginaactual = window.location.pathname;
+            if (paginaactual.endsWith("jugar.html")){
+                window.location.href = "jugar2.html";
+            }else {
+                window.location.href = "jugar.html";
+            }
         } else {
             alert("Debes completar primero esta adivinanza antes de avanzar.");
         }
