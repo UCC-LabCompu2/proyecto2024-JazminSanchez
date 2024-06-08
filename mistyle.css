@@ -102,7 +102,7 @@ li{
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 15px;
 }
-.b{
+#b{
     float: right;
     border: 2px solid rgb(0, 0, 0);
     padding: 20px;
