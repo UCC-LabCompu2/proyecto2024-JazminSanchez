@@ -1,3 +1,17 @@
+function cambiaridioma() {
+    // Obtener el valor del idioma seleccionado
+    var idiomaSeleccionado = document.querySelector('input[name="idioma"]:checked').value;
+
+    console.log("Idioma seleccionado:", idiomaSeleccionado);
+
+    // Redirigir a la página correspondiente
+    if (idiomaSeleccionado === "Ingles") {
+        window.location.href = "Jugar.html"; // Reemplaza 'pagina_en_ingles.html' con la URL de la página en inglés
+    } else if (idiomaSeleccionado === "español") {
+        window.location.href = "jugar2.html"; // Reemplaza 'pagina_en_espanol.html' con la URL de la página en español
+    }
+}
+
 function saltarAdivinanza() {
     if (confirm("¿Estás seguro de que deseas saltar la adivinanza? PERDERAS 10 PUNTOS")) {
         const paginaactual = window.location.pathname;
