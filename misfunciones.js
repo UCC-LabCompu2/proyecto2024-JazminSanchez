@@ -17,7 +17,12 @@ function verificarRespuesta() {
 }
 function saltarAdivinanza() {
     if (confirm("¿Estás seguro de que deseas saltar la adivinanza? PERDERAS 10 PUNTOS")) {
-        window.location.href="index.html";
+        const paginaactual = window.location.pathname;
+        if (paginaactual.endsWith("jugar.html")){
+            window.location.href = "jugar2.html";
+        }else {
+            window.location.href = "jugar.html";
+        }
     } else {
         alert("¡Se que tu puedes!");
     }
