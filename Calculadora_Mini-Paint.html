@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Puntos</title>
+    <title>Calculadora/mini-paint</title>
     <meta content="Jazmin Sanchez" name="autor">
     <meta content="Web para jugar con adivinanzas" name="descripcion">
     <meta content="adivinanzas" name="palabras clave">
@@ -28,6 +28,7 @@
         </li>
     </ul>
 </nav>
+<div class="alinear">
 <div class="calculadora">
     <h1>Calculadora</h1>
     <form class="operacionesMat">
@@ -63,11 +64,17 @@
     </form>
 </div>
 
+<div>
+    <canvas id="canvasadibujar" class="mini" onmousemove="dibujar(event)" width="700px" height="300px"></canvas>
+    <button onclick="limpiarcanvas()">
+        Limpiar
+    </button>
+</div>
 
 <p>
     <a href="index.html" id="b" class="b"> <b>¡A Jugar! </b> </a>
 </p>
-
+</div>
 
 </body>
 </html>
