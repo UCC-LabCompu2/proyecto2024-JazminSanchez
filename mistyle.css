@@ -55,12 +55,6 @@ li{
     background-color: rgba(136, 5, 243, 0.5);
     border-radius:30px;
 }
-.div_dibujar{
-    border: 1px solid rgba(0, 0, 0, 0.45);
-    padding: 7px;
-    background-color: rgb(191, 5, 243);
-    border-radius:15px;
-}
 .div_calculadora{
     border: 1px solid rgba(0, 0, 0, 0.45);
     padding: 7px;
@@ -182,4 +176,12 @@ a, a:hover{
     background: linear-gradient(45deg, rgba(255, 0, 0, 0.41), rgba(255, 128, 0, 0.45), rgba(255, 255, 0, 0.53), rgba(0, 255, 0, 0.38));
     border-radius:15px;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+}
+.mini{
+    border:1px solid #000000;
+    background: rgba(240, 255, 105, 0.47);
+}
+.alinear{
+    display: flex;
+    align-items: center;
 }
