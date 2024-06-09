@@ -27,6 +27,15 @@ nav{
     align-items: center;
     font-size: 20px;
 }
+.nav_iz{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+.nav_der{
+    display: flex;
+    justify-content: flex-end;
+}
 ul{
     list-style: none;
     display: flex;
@@ -46,10 +55,16 @@ li{
     background-color: rgba(136, 5, 243, 0.5);
     border-radius:30px;
 }
-.div_puntos{
+.div_dibujar{
     border: 1px solid rgba(0, 0, 0, 0.45);
     padding: 7px;
-    background-color: rgba(136, 5, 243, 0.5);
+    background-color: rgb(191, 5, 243);
+    border-radius:15px;
+}
+.div_calculadora{
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    padding: 7px;
+    background-color: rgb(243, 5, 33);
     border-radius:15px;
 }
 #s2{
@@ -106,7 +121,7 @@ li{
     float: right;
     border: 2px solid rgb(0, 0, 0);
     padding: 20px;
-    margin:50px; /* margin: [top] [right] [bottom] [left] */
+    margin:10px; /* margin: [top] [right] [bottom] [left] */
     background-color: rgba(5, 152, 243, 0.84);
     border-radius:15px;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
@@ -155,4 +170,16 @@ li{
 a, a:hover{
     text-decoration: none;
     color: black;
+}
+.operacionesMat input{
+    max-width: 40px;
+}
+.calculadora{
+    width: 20vw;
+    height: 30vh;
+    padding: 15px;
+    margin:10px 10px 5px ;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.41), rgba(255, 128, 0, 0.45), rgba(255, 255, 0, 0.53), rgba(0, 255, 0, 0.38));
+    border-radius:15px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
 }
