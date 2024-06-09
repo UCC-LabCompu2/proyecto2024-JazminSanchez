@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="misfunciones.js"></script>
 </head>
 <body>
 
@@ -27,9 +28,41 @@
         </li>
     </ul>
 </nav>
-<section id="s2">
-    <h2> Mis puntos: 53 </h2>
-</section>
+<div class="calculadora">
+    <h1>Calculadora</h1>
+    <form class="operacionesMat">
+        <p>
+            <input id="nums1" type="text" name="sum_num1" onchange="calcularsuma()">
+            +
+            <input id="nums2" type="text" name="sum_num2" onchange="calcularsuma()">
+            =
+            <span id="totalS" type="text" name="sum_total"></span>
+        </p>
+        <p>
+            <input id="numr1" type="text" name="res_num1" onchange="calcularresta()">
+            -
+            <input id="numr2" type="text" name="res_num2" onchange="calcularresta()">
+            =
+            <span id="totalR" type="text" name="res_total"></span>
+
+        </p>
+        <p>
+            <input id="numm1" type="text" name="mul_num1" onchange="calcularmul()">
+            x
+            <input id="numm2" type="text" name="mul_num2" onchange="calcularmul()">
+            =
+            <span id="totalM" type="text" name="mul_total"></span>
+        </p>
+        <p>
+            <input id="numd1" type="text" name="div_num1" onchange="calculardiv()">
+            /
+            <input id="numd2" type="text" name="div_num2" onchange="calculardiv()">
+            =
+            <span id="totalD" type="text" name="div_total"></span>
+        </p>
+    </form>
+</div>
+
 
 <p>
     <a href="index.html" id="b" class="b"> <b>¡A Jugar! </b> </a>
