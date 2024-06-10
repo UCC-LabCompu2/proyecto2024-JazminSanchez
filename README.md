@@ -1,4 +1,14 @@
 # Adivinanzas
+## Índice
+
+1. [Adivinanzas](#adivinanzas)
+2. [Autor](#autor)
+3. [Utilidades](#utilidades)
+4. [GitHub Pages](#github-pages)
+5. [Tecnologías Utilizadas](#tecnologías-utilizadas)
+6. [Tabla Comparativa Respecto Navegación entre Secciones](#tabla-comparativa-respecto-navegación-entre-secciones)
+7. [Modo de Uso](#modo-de-uso)
+
 ## Autor:
   Jazmín Sanchez
 ## Utilidades:
