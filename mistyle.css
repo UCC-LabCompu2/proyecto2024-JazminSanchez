@@ -52,13 +52,13 @@ li{
 .div_home{
     border: 1px solid rgba(0, 0, 0, 0.45);
     padding: 5px;
-    background-color: rgba(136, 5, 243, 0.5);
+    background-color: rgb(243, 231, 5);
     border-radius:30px;
 }
 .div_calculadora{
     border: 1px solid rgba(0, 0, 0, 0.45);
     padding: 7px;
-    background-color: rgb(243, 5, 33);
+    background-color: rgb(251, 24, 153);
     border-radius:15px;
 }
 #s2{
@@ -73,15 +73,6 @@ li{
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 25px;
 }
-#s1{
-    float: right;
-    padding: 20px;
-    margin:28px 15px 5px ;
-    background-color: rgba(235, 243, 5, 0.55);
-    border-radius:15px;
-    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 15px;
-}
 #s3 {
     float: right;
     padding: 20px;
@@ -91,21 +82,11 @@ li{
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 15px;
 }
-.div_nivel{
-    float: right;
-    border: 1px solid rgba(0, 0, 0, 0.37);
-    padding: 20px;
-    margin:28px 15px 5px ;
-    background-color: rgba(243, 5, 167, 0.63);
-    border-radius:15px;
-    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 15px;
-}
 .div_idioma{
     float: right;
     border: 1px solid rgba(0, 0, 0, 0.37);
     padding: 20px;
-    margin:28px 15px 5px ;
+    margin:10px 10px 5px ;
     background-color: rgba(243, 104, 5, 0.7);
     border-radius:15px;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
