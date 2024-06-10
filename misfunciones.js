@@ -1,5 +1,10 @@
+/**
+ * Pregunta si deseas saltear la pregunta si la respuesta es si, lo hace.
+ * @method saltarAdivinanza
+ * @return
+ */
 function saltarAdivinanza() {
-    if (confirm("¿Estás seguro de que deseas saltar la adivinanza? PERDERAS 10 PUNTOS")) {
+    if (confirm("¿Estás seguro de que deseas saltar la adivinanza?")) {
         const paginaactual = window.location.pathname;
         if (paginaactual.endsWith("Jugar.html")){
             window.location.href = "jugar2.html";
@@ -10,14 +15,24 @@ function saltarAdivinanza() {
         alert("¡Se que tu puedes!");
     }
 }
+/**
+ * Brinda una pista al ususario
+ * @method ayuda
+ * @return
+ */
 function ayuda() {
     const paginaactual = window.location.pathname;
     if (paginaactual.endsWith("Jugar.html")){
-        alert("Es 1 palabra, muy conocida en Hawai");
+        alert("Es 1 palabra, muy conocida en Hawai.");
     }else {
         alert("Clase de ejercicios aeróbicos que involucra baile y música.");
     }
 }
+/**
+ * A partir de los valores ingresados decide si puedes avanzar o no.
+ * @method seguir
+ * @return
+ */
 function seguir() {
     // La respuesta correcta
     const respuestaCorrecta =["aloha", "zumba"];
@@ -39,53 +54,70 @@ function seguir() {
         }
 }
 //matematica
-
+/**
+ * Calculadora: perimte sumar dos elementos.
+ * @method calcularsuma
+ * @return
+ */
 function calcularsuma() {
     var num1, num2;
     num1 = document.getElementsByName("sum_num1")[0].value;
     num2 = document.getElementsByName("sum_num2")[0].value;
 
     if(isNaN(num1) || isNaN(num2)) {
-        alert("se ingreso un valor invalido");
+        alert("Se ingresó un valor inválido.");
         document.getElementsByName("sum_num1")[0].value = "";
         document.getElementsByName("sum_num2")[0].value = "";
     }else{
         document.getElementsByName("sum_total")[0].innerHTML = Number(num1) + Number(num2);
     }
 }
+/**
+ * Calculadora: perimte restar dos elementos.
+ * @method calcularresta
+ * @return
+ */
 function calcularresta() {
     var num1, num2;
     num1 = document.getElementsByName("res_num1")[0].value;
     num2 = document.getElementsByName("res_num2")[0].value;
 
     if(isNaN(num1) || isNaN(num2)) {
-        alert("se ingreso un valor invalido");
+        alert("Se ingresó un valor inválido.");
         document.getElementsByName("res_num1")[0].value = "";
         document.getElementsByName("res_num2")[0].value = "";
     }else {
         document.getElementsByName("res_total")[0].innerHTML = Number(num1) - Number(num2);
     }
 }
-
+/**
+ * Calculadora: perimte multiplicar dos elementos.
+ * @method calcularmul
+ * @return
+ */
 function calcularmul() {
     var num1, num2;
     num1 = document.getElementsByName("mul_num1")[0].value;
     num2 = document.getElementsByName("mul_num2")[0].value;
     if(isNaN(num1) || isNaN(num2)) {
-        alert("se ingreso un valor invalido");
+        alert("Se ingresó un valor inválido.");
         document.getElementsByName("mul_num1")[0].value = "";
         document.getElementsByName("mul_num2")[0].value = "";
     }else {
         document.getElementsByName("mul_total")[0].innerHTML = Number(num1) * Number(num2);
     }
 }
-
+/**
+ * Calculadora: perimte dividir dos elementos.
+ * @method calculardiv
+ * @return
+ */
 function calculardiv() {
     var num1, num2;
     num1 = document.getElementsByName("div_num1")[0].value;
     num2 = document.getElementsByName("div_num2")[0].value;
     if(isNaN(num1) || isNaN(num2)) {
-        alert("se ingreso un valor invalido");
+        alert("Se ingresó un valor inválido.");
         document.getElementsByName("div_num1")[0].value = "";
         document.getElementsByName("div_num2")[0].value = "";
     }else {
@@ -94,6 +126,12 @@ function calculardiv() {
 }
 
 //canva
+/**
+ * Mini-Paint: Permite realizar un dibujo.
+ * @method dibujar
+ * @param event
+ * @return
+ */
 var bandera;
 function dibujar(event) {
     var canvas = document.getElementById("canvasadibujar");
@@ -112,6 +150,11 @@ function dibujar(event) {
         ctx.fill;
     }
 }
+/**
+ * Permite borrar el Mini-Paint
+ * @method limpiarcanvas
+ * @return
+ */
 function limpiarcanvas() {
     var canvas = document.getElementById("canvasadibujar");
     var ctx = canvas.getContext("2d");
