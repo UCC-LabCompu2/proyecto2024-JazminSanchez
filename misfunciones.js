@@ -1,163 +1,208 @@
 /**
- * Pregunta si deseas saltear la pregunta si la respuesta es si, lo hace.
- * @method saltarAdivinanza
- * @return
+ * Pregunta al usuario si desea saltar la adivinanza y redirige a una nueva página si confirma.
+ * Si el usuario decide no saltar, muestra un mensaje de ánimo.
+ * @function saltarAdivinanza
+ * @returns {void}
  */
-function saltarAdivinanza() {
+const saltarAdivinanza = () => {
     if (confirm("¿Estás seguro de que deseas saltar la adivinanza?")) {
         const paginaactual = window.location.pathname;
-        if (paginaactual.endsWith("Jugar.html")){
+        if (paginaactual.endsWith("Jugar.html")) {
             window.location.href = "jugar2.html";
-        }else {
+        } else {
             window.location.href = "Jugar.html";
         }
     } else {
         alert("¡Se que tu puedes!");
     }
 }
+
 /**
  * Brinda una pista al ususario
  * @method ayuda
- * @return
+ * @return {void}
  */
-function ayuda() {
+const ayuda = () => {
     const paginaactual = window.location.pathname;
-    if (paginaactual.endsWith("Jugar.html")){
+    if (paginaactual.endsWith("Jugar.html")) {
         alert("Es 1 palabra, muy conocida en Hawai.");
-    }else {
+    } else {
         alert("Clase de ejercicios aeróbicos que involucra baile y música.");
     }
 }
+
 /**
  * A partir de los valores ingresados decide si puedes avanzar o no.
  * @method seguir
- * @return
+ * @return {void}
  */
-function seguir() {
+const seguir = () => {
     // La respuesta correcta
-    const respuestaCorrecta =["aloha", "zumba"];
+    const respuestaCorrecta = ["aloha", "zumba"];
     // Obtener el valor ingresado por el usuario
     const respuestaUsuario = document.getElementById("respuesta").value.trim().toLowerCase();
     // Elemento donde se mostrará el resultado
     const resultado = document.getElementById("resultado");
 
-        if (respuestaCorrecta.includes(respuestaUsuario)) { // Verificar si la respuesta es correcta
-            const paginaactual = window.location.pathname;
-            if (paginaactual.endsWith("Jugar.html")){
-                window.location.href = "jugar2.html";
-            }else {
-                window.location.href = "Jugar.html";
-            }
+    if (respuestaCorrecta.includes(respuestaUsuario)) { // Verificar si la respuesta es correcta
+        const paginaactual = window.location.pathname;
+        if (paginaactual.endsWith("Jugar.html")) {
+            window.location.href = "jugar2.html";
         } else {
-            resultado.textContent = "Incorrecto, intenta de nuevo.";
-            resultado.style.color = "red";
+            window.location.href = "Jugar.html";
         }
+    } else {
+        resultado.textContent = "Incorrecto, intenta de nuevo.";
+        resultado.style.color = "red";
+    }
 }
+
 //matematica
 /**
  * Calculadora: perimte sumar dos elementos.
  * @method calcularsuma
- * @return
+ * @return {void}
  */
-function calcularsuma() {
+const calcularsuma = () =>  {
     var num1, num2;
     num1 = document.getElementsByName("sum_num1")[0].value;
     num2 = document.getElementsByName("sum_num2")[0].value;
 
-    if(isNaN(num1) || isNaN(num2)) {
+    if (isNaN(num1) || isNaN(num2)) {
         alert("Se ingresó un valor inválido.");
         document.getElementsByName("sum_num1")[0].value = "";
         document.getElementsByName("sum_num2")[0].value = "";
-    }else{
+    } else {
         document.getElementsByName("sum_total")[0].innerHTML = Number(num1) + Number(num2);
     }
 }
+
 /**
  * Calculadora: perimte restar dos elementos.
  * @method calcularresta
- * @return
+ * @return {void}
  */
-function calcularresta() {
+const calcularresta = () =>  {
     var num1, num2;
     num1 = document.getElementsByName("res_num1")[0].value;
     num2 = document.getElementsByName("res_num2")[0].value;
 
-    if(isNaN(num1) || isNaN(num2)) {
+    if (isNaN(num1) || isNaN(num2)) {
         alert("Se ingresó un valor inválido.");
         document.getElementsByName("res_num1")[0].value = "";
         document.getElementsByName("res_num2")[0].value = "";
-    }else {
+    } else {
         document.getElementsByName("res_total")[0].innerHTML = Number(num1) - Number(num2);
     }
 }
+
 /**
- * Calculadora: perimte multiplicar dos elementos.
- * @method calcularmul
- * @return
+ * Realiza una multiplicación utilizando los valores ingresados en dos campos y muestra el resultado.
+ * Si alguno de los valores ingresados no es numérico, muestra una alerta y limpia los campos.
+ * @function calcularmul
+ * @returns {void}
  */
-function calcularmul() {
+const calcularmul = () =>  {
     var num1, num2;
     num1 = document.getElementsByName("mul_num1")[0].value;
     num2 = document.getElementsByName("mul_num2")[0].value;
-    if(isNaN(num1) || isNaN(num2)) {
+    if (isNaN(num1) || isNaN(num2)) {
         alert("Se ingresó un valor inválido.");
         document.getElementsByName("mul_num1")[0].value = "";
         document.getElementsByName("mul_num2")[0].value = "";
-    }else {
+    } else {
         document.getElementsByName("mul_total")[0].innerHTML = Number(num1) * Number(num2);
     }
 }
+
 /**
- * Calculadora: perimte dividir dos elementos.
- * @method calculardiv
- * @return
+ * Realiza una división utilizando los valores ingresados en dos campos y muestra el resultado.
+ * Si alguno de los valores ingresados no es numérico, muestra una alerta y limpia los campos.
+ * @function calculardiv
+ * @returns {void}
  */
-function calculardiv() {
+const calculardiv = () => {
     var num1, num2;
     num1 = document.getElementsByName("div_num1")[0].value;
     num2 = document.getElementsByName("div_num2")[0].value;
-    if(isNaN(num1) || isNaN(num2)) {
+    if (isNaN(num1) || isNaN(num2)) {
         alert("Se ingresó un valor inválido.");
         document.getElementsByName("div_num1")[0].value = "";
         document.getElementsByName("div_num2")[0].value = "";
-    }else {
+    } else {
         document.getElementsByName("div_total")[0].innerHTML = Number(num1) / Number(num2);
     }
 }
 
 //canva
 /**
- * Mini-Paint: Permite realizar un dibujo.
- * @method dibujar
- * @param event
- * @return
+ * Mini-Paint: Permite realizar un dibujo en un lienzo interactivo.
+ * @function dibujar
+ * @param {MouseEvent} event - El evento de mouse que desencadenó la función.
+ * @returns {void}
  */
 var bandera;
-function dibujar(event) {
-    var canvas = document.getElementById("canvasadibujar");
-    var ctx = canvas.getContext("2d");
 
-    var rect = canvas.getBoundingClientRect();
-    var posx = event.clientX - rect.left;
-    var posy = event.clientY - rect.top;
+const dibujar = (event) => {
+    const canvas = document.getElementById("canvasadibujar");
+    const ctx = canvas.getContext("2d");
+
+    const rect = canvas.getBoundingClientRect();
+    const posx = event.clientX - rect.left;
+    const posy = event.clientY - rect.top;
     console.log(posx, posy);
 
-    canvas.onmousedown = function(){bandera = true};
-    canvas.onmouseup = function(){bandera = false};
+    let bandera = false;
 
-    if(bandera) {
+    canvas.onmousedown = () => {
+        bandera = true;
+    };
+    canvas.onmouseup = () => {
+        bandera = false;
+    };
+
+    if (bandera) {
         ctx.fillRect(posx, posy, 5, 5);
         ctx.fill;
     }
 }
+
 /**
- * Permite borrar el Mini-Paint
- * @method limpiarcanvas
- * @return
+ * Limpia el lienzo del Mini-Paint, elimina todos los trazos realizados.
+ * @function limpiarcanvas
+ * @returns {void}
  */
-function limpiarcanvas() {
+const limpiarcanvas = () =>  {
     var canvas = document.getElementById("canvasadibujar");
     var ctx = canvas.getContext("2d");
 
     canvas.width = canvas.width;
 }
+/*
+function seleccionIdioma(){
+    let data = document.getElementById("dioma").value;
+    if(data=='es'){
+    location.href ="jugar2.html";
+    }else{
+    location.href ="Jugar2.html";
+    }
+}
+
+function idioma(e){
+    let data = document.getElementById("idioma").value;
+    if(data=='es'){
+    location.href ="index.html";
+    }else{
+    location.href ="index2.html";
+    }
+}
+
+
+function idioma2(){
+    let data = document.getElementById("idioma1");
+    if(data.checked){
+    location.href ="index.html";
+    }else{
+    location.href ="index2.html";
+    }
+} */
