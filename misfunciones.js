@@ -192,5 +192,3 @@ const idioma = () => {
         location.href = "jugar2.html";
     }
 }
-
-
