@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="misfunciones.js"></script>
 </head>
-<body>
+<body onload="setInterval(animarAuto, 25)">
 
 <header>
     <img src="imagenes/logoadivinanzas.png" id="logo" alt="logo">
@@ -70,11 +70,12 @@
         Limpiar
     </button>
 </div>
-
+    <canvas id="myCanvas2" class="ejer" width="330px" height="240px">
+        Tu navegador no soporta el tag de HTML5 canvas.
+    </canvas>
+</div>
 <p>
     <a href="index.html" id="b" class="b"> <b>¡A Jugar! </b> </a>
 </p>
-</div>
-
 </body>
 </html>
