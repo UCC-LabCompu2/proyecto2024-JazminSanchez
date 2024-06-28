@@ -63,7 +63,7 @@ const seguir = () => {
  * @method calcularsuma
  * @return {void}
  */
-const calcularsuma = () =>  {
+const calcularsuma = () => {
     var num1, num2;
     num1 = document.getElementsByName("sum_num1")[0].value;
     num2 = document.getElementsByName("sum_num2")[0].value;
@@ -82,7 +82,7 @@ const calcularsuma = () =>  {
  * @method calcularresta
  * @return {void}
  */
-const calcularresta = () =>  {
+const calcularresta = () => {
     var num1, num2;
     num1 = document.getElementsByName("res_num1")[0].value;
     num2 = document.getElementsByName("res_num2")[0].value;
@@ -102,7 +102,7 @@ const calcularresta = () =>  {
  * @function calcularmul
  * @returns {void}
  */
-const calcularmul = () =>  {
+const calcularmul = () => {
     var num1, num2;
     num1 = document.getElementsByName("mul_num1")[0].value;
     num2 = document.getElementsByName("mul_num2")[0].value;
@@ -172,37 +172,25 @@ const dibujar = (event) => {
  * @function limpiarcanvas
  * @returns {void}
  */
-const limpiarcanvas = () =>  {
+const limpiarcanvas = () => {
     var canvas = document.getElementById("canvasadibujar");
     var ctx = canvas.getContext("2d");
 
     canvas.width = canvas.width;
 }
-/*
-function seleccionIdioma(){
-    let data = document.getElementById("dioma").value;
-    if(data=='es'){
-    location.href ="jugar2.html";
-    }else{
-    location.href ="Jugar2.html";
-    }
-}
 
-function idioma(e){
-    let data = document.getElementById("idioma").value;
-    if(data=='es'){
-    location.href ="index.html";
-    }else{
-    location.href ="index2.html";
-    }
-}
-
-
-function idioma2(){
+/**
+ * Cambia el idioma a partir de la seleccion del usuario a traves de un radio button
+ * @function idioma
+ * @returns {void}
+ */
+const idioma = () => {
     let data = document.getElementById("idioma1");
-    if(data.checked){
-    location.href ="index.html";
-    }else{
-    location.href ="index2.html";
+    if (data.checked) {
+        location.href = "Jugar.html";
+    } else {
+        location.href = "jugar2.html";
     }
-} */
+}
+
+
