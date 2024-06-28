@@ -188,7 +188,7 @@ const idioma = () => {
 
 x=0;
 dx=2;
-function animarAuto(){
+function animacion(){
     var canvas = document.getElementById("myCanvas2");
     var ctx = canvas.getContext("2d");
 
