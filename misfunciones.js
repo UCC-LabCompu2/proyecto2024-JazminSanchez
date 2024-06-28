@@ -144,24 +144,17 @@ const calculardiv = () => {
 var bandera;
 
 const dibujar = (event) => {
-    const canvas = document.getElementById("canvasadibujar");
-    const ctx = canvas.getContext("2d");
+    var canvas = document.getElementById("canvasadibujar");
+    var ctx = canvas.getContext("2d");
 
-    const rect = canvas.getBoundingClientRect();
-    const posx = event.clientX - rect.left;
-    const posy = event.clientY - rect.top;
+    var rect = canvas.getBoundingClientRect();
+    var posx = event.clientX - rect.left;
+    var posy = event.clientY - rect.top;
     console.log(posx, posy);
 
-    let bandera = false;
-
-    canvas.onmousedown = () => {
-        bandera = true;
-    };
-    canvas.onmouseup = () => {
-        bandera = false;
-    };
-
-    if (bandera) {
+    canvas.onmousedown = function(){bandera = true};
+    canvas.onmouseup = function(){bandera = false};
+    if(bandera) {
         ctx.fillRect(posx, posy, 5, 5);
         ctx.fill;
     }
