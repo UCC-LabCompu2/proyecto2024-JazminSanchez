@@ -6,6 +6,7 @@
     <meta content="Jazmin Sanchez" name="autor">
     <meta content="Web para jugar con adivinanzas" name="descripcion">
     <meta content="adivinanzas" name="palabras clave">
+    <script type="text/javascript" src="misfunciones.js"></script>
     <link rel="stylesheet" href="mistyle.css" type="text/css">
     <link rel="shortcut icon" href="imagenes/logoadivinanzas.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,22 +39,12 @@
     <h2> ¿Cuántas adivinanzas podrás lograr? </h2>
 </section>
 
-<select id="dioma">
-    <option value="es">Español</option>
-    <option value="en">English</option>
-</select>
-<button><!--onclick="seleccionIdioma()" --> Comenzar</button>
-
 <label for="idioma1">ESPAÑOL</label>
-<input type="checkbox" id="idioma1" value="es">
+<input type="radio" name="idioma" id="idioma1" value="es" checked>
 <label for="idioma2">INGLES</label>
-<input type="checkbox" id="idioma2" value="en">
+<input type="radio" name="idioma" id="idioma2" value="en">
+<button onclick="idioma()"> Comenzar</button>
 
-<button> <!-- onclick="idioma()"--> Comenzar</button>
-
-<p>
-    <a href="Jugar.html" id="b" class="b"> <b>¡Comenzar! </b> </a>
-</p>
 
 </body>
 </html>
