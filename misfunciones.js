@@ -8,9 +8,17 @@ const saltarAdivinanza = () => {
         const paginaactual = window.location.pathname;
         if (paginaactual.endsWith("Jugar.html")) {
             window.location.href = "jugar2.html";
-        } else {
+        }
+        if (paginaactual.endsWith("jugar2.html")){
             window.location.href = "Jugar.html";
         }
+        if (paginaactual.endsWith("Play.html")) {
+            window.location.href = "Play2.html";
+        }
+        if (paginaactual.endsWith("Play2.html")){
+            window.location.href = "Play.html";
+        }
+
     } else {
         alert("¡Se que tu puedes!");
     }
@@ -23,9 +31,16 @@ const saltarAdivinanza = () => {
 const ayuda = () => {
     const paginaactual = window.location.pathname;
     if (paginaactual.endsWith("Jugar.html")) {
-        alert("Es 1 palabra, muy conocida en Hawai.");
-    } else {
+        alert("Es 1 palabra, muy conocida en Hawai utilizada para decir Hola.");
+    }
+    if (paginaactual.endsWith("jugar2.html")){
         alert("Clase de ejercicios aeróbicos que involucra baile y música.");
+    }
+    if (paginaactual.endsWith("Play.html")){
+        alert("It's a name commonly used to describe colorfull, soft, chewy candies.");
+    }
+    if (paginaactual.endsWith("Play2.html")){
+        alert("It's an instrument that you play by pressing keys to produce music.");
     }
 }
 
@@ -35,7 +50,7 @@ const ayuda = () => {
  */
 const seguir = () => {
     // La respuesta correcta
-    const respuestaCorrecta = ["aloha", "zumba"];
+    const respuestaCorrecta = ["aloha", "alohas", "zumba", "gummy", "a piano", "piano"];
     // Obtener el valor ingresado por el usuario
     const respuestaUsuario = document.getElementById("respuesta").value.trim().toLowerCase();
     // Elemento donde se mostrará el resultado
@@ -45,8 +60,15 @@ const seguir = () => {
         const paginaactual = window.location.pathname;
         if (paginaactual.endsWith("Jugar.html")) {
             window.location.href = "jugar2.html";
-        } else {
+        }
+        if (paginaactual.endsWith("jugar2.html")){
             window.location.href = "Jugar.html";
+        }
+        if (paginaactual.endsWith("Play.html")) {
+            window.location.href = "Play2.html";
+        }
+        if (paginaactual.endsWith("Play2.html")){
+            window.location.href = "Play.html";
         }
     } else {
         resultado.textContent = "Incorrecto, intenta de nuevo.";
@@ -174,7 +196,7 @@ const idioma = () => {
     if (data.checked) {
         location.href = "Jugar.html";
     } else {
-        location.href = "jugar2.html";
+        location.href = "Play.html";
     }
 }
 
