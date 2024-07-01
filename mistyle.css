@@ -1,6 +1,8 @@
 body{
     font-family: Arial, sans-serif;
     background: rgba(185, 241, 166, 0.82);
+    /* [content]; [padding]; [border]; [marging]  */
+    /* margin: [top] [right] [bottom] [left] */
 }
 header{
     font-family: "Lora", serif;
@@ -119,7 +121,7 @@ li{
     float: right;
     border: 2px solid rgb(0, 0, 0);
     padding: 20px;
-    margin:5px; /* margin: [top] [right] [bottom] [left] */
+    margin:5px;
     background-color: rgba(5, 152, 243, 0.84);
     border-radius:15px;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
