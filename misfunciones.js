@@ -53,7 +53,8 @@ const seguir = () => {
     const respuestaCorrecta = ["aloha", "alohas", "zumba", "gummy", "a piano", "piano"];
     // Obtener el valor ingresado por el usuario
     const respuestaUsuario = document.getElementById("respuesta").value.trim().toLowerCase();
-    // Elemento donde se mostrará el resultado
+    // se eliminan los espacios en blanco al principio y al final de la cadena y luego se convierte toda la cadena a minúsculas.
+    //muestra el mensaje de error debajo de donde se ingresa la respuesta
     const resultado = document.getElementById("resultado");
 
     if (respuestaCorrecta.includes(respuestaUsuario)) { // Verificar si la respuesta es correcta
@@ -84,11 +85,13 @@ const seguir = () => {
  */
 const calcularsuma = () => {
     let num1, num2;
-    num1 = document.getElementsByName("sum_num1")[0].value;
+    num1 = document.getElementsByName("sum_num1")[0].value; // Estamos accediendo al primer elemento de elementos de tipo formulario.
     num2 = document.getElementsByName("sum_num2")[0].value;
 
     if (isNaN(num1) || isNaN(num2)) {
+        // si el argumento no es un número funciona la alerta, Si es un número realiza la op.
         alert("Se ingresó un valor inválido.");
+        //blanqueamiento de los campos si el argumento no es un numero.
         document.getElementsByName("sum_num1")[0].value = "";
         document.getElementsByName("sum_num2")[0].value = "";
     } else {
@@ -157,21 +160,22 @@ const calculardiv = () => {
  * @function dibujar
  * @param {MouseEvent} event - El evento de mouse que desencadenó la función.
  */
+//variable global que se utiliza para saber si el mouse está presionado o no.
 let bandera;
-
+//toma un evento event como parámetro. Este evento generalmente se refiere a un evento del mouse.
 const dibujar = (event) => {
     const canvas = document.getElementById("canvasadibujar");
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext("2d");//dibujo en 2D del canvas, Este contexto es lo que permite dibujar en el canvas.
 
-    const rect = canvas.getBoundingClientRect();
-    const posx = event.clientX - rect.left;
+    const rect = canvas.getBoundingClientRect(); //Se obtiene la posición del canvas en la pantalla
+    const posx = event.clientX - rect.left; //Se calcula la posición X e Y del ratón dentro del canvas
     const posy = event.clientY - rect.top;
     console.log(posx, posy);
 
     canvas.onmousedown = function(){bandera = true};
     canvas.onmouseup = function(){bandera = false};
     if(bandera) {
-        ctx.fillRect(posx, posy, 5, 5);
+        ctx.fillRect(posx, posy, 5, 5); //se dibuja un rectángulo de 5x5 píxeles en la posición del mouse
         ctx.fill;
     }
 }
@@ -184,7 +188,7 @@ const limpiarcanvas = () => {
     const canvas = document.getElementById("canvasadibujar");
     const ctx = canvas.getContext("2d");
 
-    canvas.width = canvas.width;
+    canvas.width = canvas.width; // cambiar la dimensión del canvas reinicia su estado interno, borrando t odo dentro
 }
 
 /**
@@ -205,7 +209,7 @@ const idioma = () => {
  * @function animacion
  */
 
-/* declaro variables globales para utilizar solo en la funcion animacion */
+//declaro variables globales para utilizar solo en la funcion animacion
 x=0;
 dx=2;
 const animacion = () => {
