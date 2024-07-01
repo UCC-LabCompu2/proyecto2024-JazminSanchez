@@ -2,7 +2,6 @@
  * Pregunta al usuario si desea saltar la adivinanza y redirige a una nueva página si confirma.
  * Si el usuario decide no saltar, muestra un mensaje de ánimo.
  * @function saltarAdivinanza
- * @returns {void}
  */
 const saltarAdivinanza = () => {
     if (confirm("¿Estás seguro de que deseas saltar la adivinanza?")) {
@@ -20,7 +19,6 @@ const saltarAdivinanza = () => {
 /**
  * Brinda una pista al ususario
  * @method ayuda
- * @return {void}
  */
 const ayuda = () => {
     const paginaactual = window.location.pathname;
@@ -34,7 +32,6 @@ const ayuda = () => {
 /**
  * A partir de los valores ingresados decide si puedes avanzar o no.
  * @method seguir
- * @return {void}
  */
 const seguir = () => {
     // La respuesta correcta
@@ -59,12 +56,12 @@ const seguir = () => {
 
 //matematica
 /**
- * Calculadora: perimte sumar dos elementos.
+ * Calculadora: Realiza una suma utilizando los valores ingresados en dos campos y muestra el resultado.
+ * Si alguno de los valores ingresados no es numérico, muestra una alerta y limpia los campos.
  * @method calcularsuma
- * @return {void}
  */
 const calcularsuma = () => {
-    var num1, num2;
+    let num1, num2;
     num1 = document.getElementsByName("sum_num1")[0].value;
     num2 = document.getElementsByName("sum_num2")[0].value;
 
@@ -78,12 +75,12 @@ const calcularsuma = () => {
 }
 
 /**
- * Calculadora: perimte restar dos elementos.
+ * Calculadora: Realiza una resta utilizando los valores ingresados en dos campos y muestra el resultado.
+ * Si alguno de los valores ingresados no es numérico, muestra una alerta y limpia los campos.
  * @method calcularresta
- * @return {void}
  */
 const calcularresta = () => {
-    var num1, num2;
+    let num1, num2;
     num1 = document.getElementsByName("res_num1")[0].value;
     num2 = document.getElementsByName("res_num2")[0].value;
 
@@ -97,13 +94,12 @@ const calcularresta = () => {
 }
 
 /**
- * Realiza una multiplicación utilizando los valores ingresados en dos campos y muestra el resultado.
+ * Calculadora: Realiza una multiplicación utilizando los valores ingresados en dos campos y muestra el resultado.
  * Si alguno de los valores ingresados no es numérico, muestra una alerta y limpia los campos.
  * @function calcularmul
- * @returns {void}
  */
 const calcularmul = () => {
-    var num1, num2;
+    let num1, num2;
     num1 = document.getElementsByName("mul_num1")[0].value;
     num2 = document.getElementsByName("mul_num2")[0].value;
     if (isNaN(num1) || isNaN(num2)) {
@@ -116,13 +112,12 @@ const calcularmul = () => {
 }
 
 /**
- * Realiza una división utilizando los valores ingresados en dos campos y muestra el resultado.
+ * Calculadora: Realiza una división utilizando los valores ingresados en dos campos y muestra el resultado.
  * Si alguno de los valores ingresados no es numérico, muestra una alerta y limpia los campos.
  * @function calculardiv
- * @returns {void}
  */
 const calculardiv = () => {
-    var num1, num2;
+    let num1, num2;
     num1 = document.getElementsByName("div_num1")[0].value;
     num2 = document.getElementsByName("div_num2")[0].value;
     if (isNaN(num1) || isNaN(num2)) {
@@ -139,17 +134,16 @@ const calculardiv = () => {
  * Mini-Paint: Permite realizar un dibujo en un lienzo interactivo.
  * @function dibujar
  * @param {MouseEvent} event - El evento de mouse que desencadenó la función.
- * @returns {void}
  */
-var bandera;
+let bandera;
 
 const dibujar = (event) => {
-    var canvas = document.getElementById("canvasadibujar");
-    var ctx = canvas.getContext("2d");
+    const canvas = document.getElementById("canvasadibujar");
+    const ctx = canvas.getContext("2d");
 
-    var rect = canvas.getBoundingClientRect();
-    var posx = event.clientX - rect.left;
-    var posy = event.clientY - rect.top;
+    const rect = canvas.getBoundingClientRect();
+    const posx = event.clientX - rect.left;
+    const posy = event.clientY - rect.top;
     console.log(posx, posy);
 
     canvas.onmousedown = function(){bandera = true};
@@ -163,11 +157,10 @@ const dibujar = (event) => {
 /**
  * Limpia el lienzo del Mini-Paint, elimina todos los trazos realizados.
  * @function limpiarcanvas
- * @returns {void}
  */
 const limpiarcanvas = () => {
-    var canvas = document.getElementById("canvasadibujar");
-    var ctx = canvas.getContext("2d");
+    const canvas = document.getElementById("canvasadibujar");
+    const ctx = canvas.getContext("2d");
 
     canvas.width = canvas.width;
 }
@@ -175,7 +168,6 @@ const limpiarcanvas = () => {
 /**
  * Cambia el idioma a partir de la seleccion del usuario a traves de un radio button
  * @function idioma
- * @returns {void}
  */
 const idioma = () => {
     let data = document.getElementById("idioma1");
@@ -186,15 +178,21 @@ const idioma = () => {
     }
 }
 
+/**
+ * Permite correr una animación de una imagen
+ * @function animacion
+ */
+
+/* declaro variables globales para utilizar solo en la funcion animacion */
 x=0;
 dx=2;
-function animacion(){
-    var canvas = document.getElementById("myCanvas2");
-    var ctx = canvas.getContext("2d");
+const animacion = () => {
+    const canvas = document.getElementById("myCanvas2");
+    const ctx = canvas.getContext("2d");
 
     canvas.width = canvas.width;
 
-    var img = new Image();
+    const img = new Image();
     img.src = "imagenes/pensar.png";
 
     img.onload = function(){
